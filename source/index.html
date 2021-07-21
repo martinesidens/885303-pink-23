@@ -1,12 +1,112 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-body">
 
-  </body>
+<div class="content__wrapper">
+  <header class="header">
+    <div class="header__wrapper">
+      <a class="header__logo">
+        <img class="header__logo-img" src="#" alt="Логотип приложения Пинк" width="74" height="23">
+      </a>
+    </div>
+    <nav>
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a class="header__nav-link" href="#">Главная</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Фотографии</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="form.html">Конкурс</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="form.html">HTML Academy</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Приложение для цветных фотографий Пинк</h1>
+
+    <section class="billboard">
+      <div class="billboard_wrapper">
+        <p class="billboard__title">Взгляните на жизнь иначе!</p>
+        <button class="billboard__button" type="button">Скачать приложение</button>
+        <ul class="billboard__list">
+          <li class="billboard__list-item"><img class="billboard__list-img" src="#" alt="AppStore"></li>
+          <li class="billboard__list-item"><img class="billboard__list-img" src="#" alt="GooglePlay"></li>
+          <li class="billboard__list-item"><img class="billboard__list-img" src="#" alt="Microsoft Store"></li>
+        </ul>
+        <p class="billboard__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2 class="visually-hidden">Преимущества приложения для цветных фотографий Пинк</h2>р
+
+      <p class="features__title">Устали от серости мегаполиса?</p>
+      <p class="features__title">Нам есть, что вам предложить!</p>
+
+      <ul class="features__list">
+        <li class="features__list-item">
+          <p class="features__list-title">Поднимает настроение</p>
+          <p class="features__list-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="features__list-item">
+          <p class="features__list-title">Меняет мир вокруг</p>
+          <p class="features__list-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="features__list-item">
+          <p class="features__list-title">Заводит новых друзей</p>
+          <p class="features__list-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+
+      <ul class="features__images">
+        <li>
+          <img class="features__images-list features__images-list_hidden" src="#" alt="Обычная фотография">
+        </li>
+        <li>
+          <img class="features__images-list features__images-list_hidden" src="#" alt="Фотография, обработанная приложением Пинк">
+        </li>
+        <li>
+          <img class="features__images-list" src="#" alt="Фотография, обработанная приложением Пинк со смайлом">
+        </li>
+      </ul>
+    </section>
+
+    <section class="slider">
+      <ul class="slider__list">
+        <li class="slider__item slider__item-hidden">
+          <h3 class="slide__title">Николай Петров</h3>
+          <p class="slide__text">
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p> class="slider__info">25 лет, водитель трамвая<p>
+        </li>
+        <li class="slider__item slider__item-hidden">
+          <h3 class="slide__title">Николай Петров</h3>
+          <p class="slide__text">
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p>
+          </p> class="slider__info">25 лет, водитель трамвая<p>
+        </li>
+        <li class="slider__item slider-item-hidden">
+          <h3 class="slide__title">Николай Петров</h3>
+          <p class="slide__text">
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p>
+          </p> class="slider__info">25 лет, водитель трамвая<p>
+        </li>
+      </ul>
+      <div class="slider__controls">
+        <button type="button">Первый слайд</button>
+        <button type="button">Второй слайд</button>
+        <button type="button">Третий слайд</button>
+      </div>
+    </section>
+
+
+  </main>
+  </div>
+</body>
 </html>
