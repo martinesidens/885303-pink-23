@@ -17,12 +17,15 @@
       </a>
     </div>
     <nav>
-      <ul class="header__nav-list">
-        <li class="header__nav-item"><a class="header__nav-link" href="#">Главная</a></li>
-        <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Фотографии</a></li>
-        <li class="header__nav-item"><a class="header__nav-link" href="form.html">Конкурс</a></li>
-        <li class="header__nav-item"><a class="header__nav-link" href="form.html">HTML Academy</a></li>
-      </ul>
+      <div class="header__nav-wrap">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header__nav-link" href="#">Главная</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Фотографии</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="form.html">Конкурс</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="form.html">HTML Academy</a></li>
+        </ul>
+      </div>
+      <button class="header__button-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </nav>
   </header>
   <main>
@@ -42,7 +45,7 @@
     </section>
 
     <section class="features">
-      <h2 class="visually-hidden">Преимущества приложения для цветных фотографий Пинк</h2>р
+      <h2 class="visually-hidden">Преимущества приложения для цветных фотографий Пинк</h2>
 
       <p class="features__title">Устали от серости мегаполиса?</p>
       <p class="features__title">Нам есть, что вам предложить!</p>
@@ -75,27 +78,27 @@
       </ul>
     </section>
 
-    <section class="slider">
-      <ul class="slider__list">
-        <li class="slider__item slider__item_hidden">
-          <h3 class="slide__title">Николай Петров</h3>
-          <p class="slide__text">
+    <section class="reviews slider">
+      <ul class="reviews__list slider__list">
+        <li class="reviews__item slider__item">
+          <h3 class="reviews__title">Николай Петров</h3>
+          <p class="reviews__text">
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-          <p class="slider__info">25 лет, водитель трамвая</p>
+          <p class="reviews__info">25 лет, водитель трамвая</p>
         </li>
-        <li class="slider__item slider__item_hidden">
-          <h3 class="slide__title">Николай Петров</h3>
-          <p class="slide__text">
+        <li class="reviews__item slider__item">
+          <h3 class="reviews__title">Николай Петров</h3>
+          <p class="reviews__text">
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
-          <p class="slider__info">25 лет, водитель трамвая</p>
+          <p class="reviews__info">25 лет, водитель трамвая</p>
         </li>
-        <li class="slider__item slider-item_hidden">
-          <h3 class="slide__title">Николай Петров</h3>
-          <p class="slide__text">
+        <li class="reviews__item slider__item">
+          <h3 class="reviews__title">Николай Петров</h3>
+          <p class="reviews__text">
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
-          <p class="slider__info"> 25 лет, водитель трамвая</p>
+          <p class="reviews__info"> 25 лет, водитель трамвая</p>
         </li>
       </ul>
       <div class="slider__controls">
@@ -105,37 +108,37 @@
       </div>
     </section>
 
-    <section class="slider-subscription">
-      <table class="slider-subscription__table">
-        <tr class="slider-subscription__title">
+    <section class="subscription slider">
+      <table class="subscription__table slider-list">
+        <tr class="subscription__title slider-item">
           <th></th>
           <th>
-            <p class="slider-subscription__heading">БAЗА</p>
-            <p class="slider-subscription__price">1,99 USD</p>
+            <p class="subscription__heading">БAЗА</p>
+            <p class="subscription__price">1,99 USD</p>
           </th>
           <th>
-            <p class="slider-subscription__heading">СТАНДАРТ</p>
-            <p class="slider-subscription__price">3,99 USD</p>
+            <p class="subscription__heading">СТАНДАРТ</p>
+            <p class="subscription__price">3,99 USD</p>
           </th>
           <th>
-            <p class="slider-subscription__heading">АНЛИМ</p>
-            <p class="slider-subscription__price">9,99 USD</p>
+            <p class="subscription__heading">АНЛИМ</p>
+            <p class="subscription__price">9,99 USD</p>
           </th>
         </tr>
-        <tr class="slider-subscription__content">
-          <td class="slider-subscription__cell">Розовый фильтр</td>
-          <td class="slider-subscription__cell"></td>
-          <td class="slider-subscription__cell"></td>
+        <tr class="subscription__content slider-item">
+          <td class="subscription__cell">Розовый фильтр</td>
+          <td class="subscription__cell"></td>
+          <td class="subscription__cell"></td>
         </tr>
-        <tr class="slider-subscription__content">
-          <td class="slider-subscription__cell">Смайлики</td>
-          <td class="slider-subscription__cell"></td>
-          <td class="slider-subscription__cell"></td>
+        <tr class="subscription__content slider-item">
+          <td class="subscription__cell">Смайлики</td>
+          <td class="subscription__cell"></td>
+          <td class="subscription__cell"></td>
         </tr>
-        <tr class="slider-subscription__content">
-          <td class="slider-subscription__cell">Комментарии</td>
-          <td class="slider-subscription__cell"></td>
-          <td class="slider-subscription__cell"></td>
+        <tr class="subscription__content slider-item">
+          <td class="subscription__cell">Комментарии</td>
+          <td class="subscription__cell"></td>
+          <td class="subscription__cell"></td>
         </tr>
       </table>
 
@@ -146,11 +149,11 @@
       <ul class="contact__list">
         <li class="contact__item">
           <p class="contact__item-title">Звоните:</p>
-          <a class="contact__item-text"href="tel:+78125556666">+7 (812) 555-66-66</a>
+          <a class="contact__item-text" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </li>
         <li class="contact__item">
           <p class="contact__item-title">Пишите:</p>
-          <a class="contact__item-text"href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a class="contact__item-text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
         <li class="contact__item">
           <p class="contact__item-title">Приезжайте в гости:</p>
