@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Константин Лесняк](https://up.htmlacademy.ru/adaptive/23/user/885303).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Иовлев](https://htmlacademy.ru/profile/skywalker).
 
 ---
 
