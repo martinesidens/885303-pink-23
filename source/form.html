@@ -15,24 +15,33 @@
       <img class="header__logo-img" src="#" alt="Логотип приложения Пинк" width="74" height="23">
     </a>
   </div>
-  <nav>
-    <ul class="header__nav-list">
-      <li class="header__nav-item"><a class="header__nav-link" href="#">Главная</a></li>
-      <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Фотографии</a></li>
-      <li class="header__nav-item"><a class="header__nav-link" href="form.html">Конкурс</a></li>
-      <li class="header__nav-item"><a class="header__nav-link" href="form.html">HTML Academy</a></li>
-    </ul>
+  <nav class="main-nav">
+    <div class="main-nav__wrap">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="form.html">HTML Academy</a></li>
+      </ul>
+    </div>
   </nav>
 </header>
 
 <main>
   <h1 class="visually-hidden">Форма отправки заявки на конкурс приложения для цветных фотографий Пинк</h1>
+
+  <section class="billboard">
+    <div class="billboard__wrapper">
+      <p class="billboard__title">Конкурс на самое безбашенное путешествие с Пинк</p>
+    </div>
+  </section>
+
   <section class="form">
-    <p class="from__title">
+    <h2 class="form__title">
       Поделитесь своей историей и получите
       шанс выиграть ценный приз — 1000
       миль на вашу бонусную карту!
-    </p>
+    </h2>
     <form action="https://echo.htmlacademy.ru" method="GET" id="main-form">
 
       <div class="form__main-wrap">
@@ -129,9 +138,9 @@
         </div>
 
       </div>
-      <div class="from__button-wrap">
-        <button class="from__button" form="main-form" type="submit">Отправить форму</button>
-        <p class="from__postscript">* — обязательные поля</p>
+      <div class="form__button-wrap">
+        <button class="form__button" form="main-form" type="submit">Отправить форму</button>
+        <p class="form__postscript">* — обязательные поля</p>
       </div>
     </form>
   </section>
@@ -161,4 +170,7 @@
     </div>
   </section>
 </footer>
+
+</body>
+</html>
 
