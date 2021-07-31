@@ -1,10 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-body">
+
+<header class="header">
+  <div class="header__wrapper">
+    <a class="header__logo">
+      <img class="header__logo-img" src="#" alt="Логотип приложения Пинк" width="74" height="23">
+    </a>
+  </div>
+  <nav class="main-nav">
+    <div class="main-nav__wrap">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="form.html">HTML Academy</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <h1 class="visually-hidden">Каталог фотографий пользователей приложения Пинк</h1>
+
+  <section class="billboard">
+    <div class="billboard__wrapper">
+      <p class="billboard__title">Фотографии пользователей</p>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <h2 class="catalog__title">
+      Взгляните на фотографии,
+      которые выкладывают пользователи!
+      Видите, как не хватает ваших?
+    </h2>
+    <div class="catalog__wrap">
+      <ul class="catalog__list">
+        <li class="photo-card photo-card--resize">
+          <a class="photo-card__link" href="#">
+            <img class="photo-card__img photo-card__img--resize" src="#" alt="Панорама моста" width="320" height="137">
+          </a>
+          <p class="photo-card__user">Анна<span class="photo-card__time">(5 минут назад)</span></p>
+          <p class="photo-card__text">
+            Прыгать или нет? Напишите в
+            комментарии свой совет и
+            смотрите прямую трансляцию в
+            перископе, задавайте свои вопросы!
+          </p>
+          <p class="photo-card__likes">Нравится: <span class="photo-card__count">215</span></p>
+        </li>
+        <li class="photo-card">
+          <a class="photo-card__link" href="#">
+            <img class="photo-card__img" src="#" alt="Фотография автомобиля" width="280" height="180">
+          </a>
+          <p class="photo-card__user">Левон<span class="photo-card__time">(5 часов назад)</span></p>
+          <p class="photo-card__text">
+            Вчера он на луну летал, сегодня в руки к нам попал.
+          </p>
+          <p class="photo-card__likes">Нравится: <span class="photo-card__count">356</span></p>
+        </li>
+        <li class="photo-card">
+          <a class="photo-card__link" href="#">
+            <img class="photo-card__img" src="#" alt="Фотография барабанной установки" width="280" height="180">
+          </a>
+          <p class="photo-card__user">Антон<span class="photo-card__time">(12 часов назад)</span></p>
+          <p class="photo-card__text">
+            Соседи будут рады!
+          </p>
+          <p class="photo-card__likes">Нравится: <span class="photo-card__count">666</span></p>
+        </li>
+        <li class="photo-card">
+          <a class="photo-card__link" href="#">
+            <img class="photo-card__img" src="#" alt="Фотография стеклянной крыши здания" width="280" height="180">
+          </a>
+          <p class="photo-card__user">Борис<span class="photo-card__time">(20 часов назад)</span></p>
+          <p class="photo-card__text">
+            Здесь могла быть ваша цитата о высоком и вечном.
+          </p>
+          <p class="photo-card__likes">Нравится: <span class="photo-card__count">215</span></p>
+        </li>
+        <li class="photo-card">
+          <a class="photo-card__link" href="#">
+            <img class="photo-card__img" src="#" alt="Фотография кубанской бахчи" width="280" height="180">
+          </a>
+          <p class="photo-card__user">Сергей<span class="photo-card__time">(25 часов назад)</span></p>
+          <p class="photo-card__text">
+            Самая кубанская в мире!
+          </p>
+          <p class="photo-card__likes">Нравится: <span class="photo-card__count">4</span></p>
+        </li>
+        <li class="photo-card">
+          <a class="photo-card__link" href="#">
+            <img class="photo-card__img" src="#" alt="Фотография панорамы с вершины горы" width="280" height="180">
+          </a>
+          <p class="photo-card__user">Сергей<span class="photo-card__time">(40 часов назад)</span></p>
+          <p class="photo-card__text">
+            Где снег-то?
+          </p>
+          <p class="photo-card__likes">Нравится: <span class="photo-card__count">150</span></p>
+        </li>
+        <li class="photo-card">
+          <a class="photo-card__link" href="#">
+            <img class="photo-card__img" src="#" alt="Фотография заката из салона самолета. Очень красиво!" width="280" height="180">
+          </a>
+          <p class="photo-card__user">Надежда<span class="photo-card__time">(45 часов назад)</span></p>
+          <p class="photo-card__text">
+            Всем GM и взаимные лайки!
+          </p>
+          <p class="photo-card__likes">Нравится:<span class="photo-card__count">2580</span></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="post">
+    <form action="https://echo.htmlacademy.ru" method="GET" id="main-form">
+      <div class="post__wrap">
+        <h2 class="post__title">
+          Затмите их всех!
+          Выкладывайте все, что накопилось в телефоне!
+        </h2>
+        <label class="post__img">
+          <img class="post__image" src="#" alt="Фотография из телефона для размещения на сервисе Пинк" width="280" height="374">
+        </label>
+        <input class="post__input visually-hidden" type="file">
+        <div class="post__filters">
+          <button class="post__filter-pruning" type="button"><span class="visually-hidden">Инструмент обрезки
+              фотографии</span></button>
+          <button class="post__filter-color" type="button"><span class="visually-hidden">Инструмент изменения цвета
+              фотографии</span></button>
+          <button class="post__filter-negative" type="button"><span class="visually-hidden">Инструмент создания негатива
+              фотографии</span></button>
+        </div>
+
+        <div class="post__control">
+          <div class="post__control-bar">
+            <div class="post__control-cursor">
+              <span class="visually-hidden">Интерактивный элемент управление фильтрами</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="post__button" type="submit"><span class="post__button-text">Запостить</span></button>
+      <button class="post__button" type="reset"><span class="post__button-text post__button-text--disable">Отмена</span></button>
+    </form>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer__logo">
+    <img class="footer__logo-img" src="#" alt="Логотип приложения Пинк">
+  </p>
+  <ul class="footer__social-list">
+    <li class="footer__social-item">
+      <a class="footer__social-link" href="https://twitter.com/?lang=ru">Twitter</a>
+    </li>
+    <li class="footer__social-item">
+      <a class="footer__social-link" href="https://ru-ru.facebook.com/">Facebook</a>
+    </li>
+    <li class="footer__social-item">
+      <a class="footer__social-link" href="https://www.youtube.com/">Youtube</a>
+    </li>
+  </ul>
+  <section class="footer__copyright">
+    <div class="footer__copyright-wrap">
+      <p class="footer__copyright-text">HTML Academy</p>
+      <a href="#" class="footer__copyright-logo">
+        <img src="#" alt="Логотип HTML Academy">
+      </a>
+    </div>
+  </section>
+</footer>
 
 </body>
 </html>
