@@ -1,0 +1,42 @@
+.subscription {
+  background-color: var(--spec-white);
+}
+
+.subscription__rate-title {
+  background-color: var(--basic-grey);
+}
+
+.subscription__rate {
+  .font (@font-family: "Open Sans Bold"; @font-weight: 700; @font-size: 16px);
+  background-color: var(--basic-grey);
+  color: var(--basic-white);
+  text-transform: uppercase;
+
+  &--hidden {
+    background-color: var(--basic-white);
+  }
+}
+
+.subscription__price-title {
+  background-color: var(--basic-grey);
+}
+
+.subscription__price {
+  .font (@font-family: "Open Sans Light"; @font-weight: 300);
+  color: var(--basic-white);
+
+  &--hidden {
+    background-color: var(--basic-white);
+  }
+}
+
+.subscription__content {
+  background-color: var(--table-white);
+}
+
+.subscription__cell {
+  .font (@font-size: 14px);
+  background-color: var(--basic-white);
+  text-transform: uppercase;
+  color: var(--basic-grey);
+}

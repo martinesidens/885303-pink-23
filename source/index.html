@@ -12,7 +12,7 @@
 <header class="header">
   <div class="header__wrapper">
     <a class="header__logo">
-      <img class="header__logo-img" src="#" alt="Логотип приложения Пинк" width="74" height="23">
+      <img class="header__logo-img" src="../img/logo-pink.svg" alt="Логотип приложения Пинк" width="74" height="23">
     </a>
   </div>
   <nav class="main-nav">
@@ -100,26 +100,26 @@
         <p class="reviews__info"> 25 лет, водитель трамвая</p>
       </li>
     </ul>
-    <div class="slider__controls">
-      <button class="slider__controls-button" type="button">Первый слайд</button>
-      <button class="slider__controls-button" type="button">Второй слайд</button>
-      <button class="slider__controls-button"  type="button">Третий слайд</button>
+    <div class="slider__controls slider__controls--hidden">
+      <button class="slider__controls-button" type="button"><span class="visually-hidden">Первый слайд</span></button>
+      <button class="slider__controls-button" type="button"><span class="visually-hidden">Второй слайд</span></button>
+      <button class="slider__controls-button" type="button"><span class="visually-hidden">Третий слайд</span></button>
     </div>
   </section>
 
   <section class="subscription slider">
     <table class="subscription__table slider-list">
-      <tr class="subscription__heading slider-item">
-        <td class="subscription__cell visually-hidden">Тариф</td>
-        <td class="subscription__cell">База</td>
-        <td class="subscription__cell">Стандарт</td>
-        <td class="subscription__cell">Анлим</td>
+      <tr class="subscription__rate-title slider-item">
+        <td class="subscription__rate subscription__rate--hidden">Тариф</td>
+        <td class="subscription__rate">База</td>
+        <td class="subscription__rate">Стандарт</td>
+        <td class="subscription__rate">Анлим</td>
       </tr>
-      <tr class="subscription__price slider-item">
-        <td class="subscription__cell visually-hidden">Цена</td>
-        <td class="subscription__cell">1,99 USD</td>
-        <td class="subscription__cell">3,99 USD</td>
-        <td class="subscription__cell">9,99 USD</td>
+      <tr class="subscription__price-title slider-item">
+        <td class="subscription__price subscription__price--hidden">Цена</td>
+        <td class="subscription__price">1,99 USD</td>
+        <td class="subscription__price">3,99 USD</td>
+        <td class="subscription__price">9,99 USD</td>
       </tr>
       <tr class="subscription__content slider-item">
         <td class="subscription__cell">Розовый фильтр</td>
@@ -140,6 +140,11 @@
         <td class="subscription__cell"><span class="visually-hidden">Да</span></td>
       </tr>
     </table>
+    <div class="slider__controls slider__controls--hidden">
+      <button class="slider__controls-button" type="button"><span class="visually-hidden">Первый слайд</span></button>
+      <button class="slider__controls-button" type="button"><span class="visually-hidden">Второй слайд</span></button>
+      <button class="slider__controls-button" type="button"><span class="visually-hidden">Третий слайд</span></button>
+    </div>
 
   </section>
 
@@ -160,14 +165,14 @@
       </li>
     </ul>
     <p class="contacts__map">
-      <img class="contacts__map-img" src="#" alt="Карта с местом расположения нашего офиса">
+      <img class="contacts__map-img" src="../img/map.jpg" alt="Карта с местом расположения нашего офиса">
     </p>
   </section>
 </main>
 
 <footer class="footer">
   <p class="footer__logo">
-    <img class="footer__logo-img" src="#" alt="Логотип приложения Пинк">
+    <img class="footer__logo-img" src="../img/logo-footer.svg" alt="Логотип приложения Пинк" width="145" height="40">
   </p>
   <ul class="footer__social-list">
     <li class="footer__social-item">
@@ -182,9 +187,9 @@
   </ul>
   <section class="footer__copyright">
     <div class="footer__copyright-wrap">
-      <p class="footer__copyright-text">HTML Academy</p>
+      <p class="footer__copyright-text">Разработано</p>
       <a href="#" class="footer__copyright-logo">
-        <img src="#" alt="Логотип HTML Academy">
+        <img src="../img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
       </a>
     </div>
   </section>
