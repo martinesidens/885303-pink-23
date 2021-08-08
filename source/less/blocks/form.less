@@ -12,23 +12,11 @@
   text-transform: uppercase;
 }
 
-.form__data-input {
+.form__data {
   .font();
 
-  &::-webkit-input-placeholder {
-    color: var(--basic-grey);
-  }
-
-  &::-moz-placeholder {
-    color: var(--basic-grey);
-  }
-
-  &:-moz-placeholder {
-    color: var(--basic-grey);
-  }
-
-  &:-ms-input-placeholder {
-    color: var(--basic-grey);
+  &::placeholder {
+    color: var(--basic-grey-rgba);
   }
 }
 
@@ -57,24 +45,16 @@
   text-transform: uppercase;
 }
 
-.form__contacts-input {
+.form__input {
   .font();
 
-  &::-webkit-input-placeholder {
-    color: var(--basic-grey);
+  &::placeholder {
+    color: var(--basic-grey-rgba);
   }
+}
 
-  &::-moz-placeholder {
-    color: var(--basic-grey);
-  }
-
-  &:-moz-placeholder {
-    color: var(--basic-grey);
-  }
-
-  &:-ms-input-placeholder {
-    color: var(--basic-grey);
-  }
+.form__app {
+  background-color: var(--spec-white);
 }
 
 .form__app-title {
@@ -88,6 +68,10 @@
   color: var(--basic-grey);
 }
 
+.form__app-text {
+  .font();
+}
+
 .form__comment-title {
   .font (@font-size: 14px; @line-height: 18px);
   color: var(--basic-pink);
@@ -97,20 +81,8 @@
 .form__comment-text {
   .font();
 
-  &::-webkit-input-placeholder {
-    color: var(--basic-grey);
-  }
-
-  &::-moz-placeholder {
-    color: var(--basic-grey);
-  }
-
-  &:-moz-placeholder {
-    color: var(--basic-grey);
-  }
-
-  &:-ms-input-placeholder {
-    color: var(--basic-grey);
+  &::placeholder {
+    color: var(--basic-grey-rgba);
   }
 }
 
