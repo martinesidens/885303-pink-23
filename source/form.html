@@ -13,7 +13,7 @@
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo">
-        <img class="header__logo-img" src="#" alt="Логотип приложения Пинк" width="74" height="23">
+        <img class="header__logo-img" src="../img/logo-pink.svg" alt="Логотип приложения Пинк" width="74" height="23">
       </a>
     </div>
     <nav class="main-nav">
@@ -22,7 +22,7 @@
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html">HTML Academy</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://up.htmlacademy.ru/adaptive/23">HTML Academy</a></li>
         </ul>
       </div>
     </nav>
@@ -47,22 +47,22 @@
 
           <fieldset class="form__data-wrap">
             <div class="form__data">
-              <input class="form__data-input" id="last-name" placeholder="Укажите фамилию *">
+              <input class="form_input" id="last-name" placeholder="Укажите фамилию *">
               <label class="form__data-title" for="last-name">Фамилия:</label>
             </div>
             <div class="form__data">
-              <input class="form__data-input" id="first-name" placeholder="Введите ваше имя *">
+              <input class="form_input" id="first-name" placeholder="Введите ваше имя *">
               <label class="form__data-title" for="first-name">Имя:</label>
             </div>
             <div class="form__data">
-              <input class="form__data-input" id="middle-name" placeholder="Ну и отчество тоже">
+              <input class="form_input" id="middle-name" placeholder="Ну и отчество тоже">
               <label class="form__data-title" for="middle-name">Отчество:</label>
             </div>
           </fieldset>
 
           <div class="form__achievements-wrap">
-            <fieldset class="form__fieldset">
-              <legend class="form__legend">
+            <fieldset class="form__achievements-fieldset">
+              <legend class="form__achievements-title">
                 Ваши безбашенные достижения в путешествии
               </legend>
 
@@ -101,12 +101,12 @@
 
           <fieldset class="form__contacts-wrap">
             <div class="form__contacts">
-              <input class="form__contacts-input" id="tel" type="tel" placeholder="Номер, пожалуйста">
-              <label for="tel">Номер телефона</label>
+              <input class="form__input" id="tel" type="tel" placeholder="Номер, пожалуйста">
+              <label class="form__contacts-title" for="tel">Номер телефона</label>
             </div>
             <div class="form__contacts">
-              <input class="form__contacts-input" id="email" type="email" placeholder="Введите почту *">
-              <label for="email">Адрес почты</label>
+              <input class="form__input" id="email" type="email" placeholder="Введите почту *">
+              <label class="form__contacts-title" for="email">Адрес почты</label>
             </div>
           </fieldset>
 
@@ -130,7 +130,7 @@
 
           <div class="form__comment">
             <div class="form__comment-wrap">
-              <h3 class="form__comment-title">ОПИШИТЕ СВОИ ЭМОЦИИ</h3>
+              <h3 class="form__comment-title">Опишите свои эмоции</h3>
               <textarea class="form__comment-text" name="comment" id="comment" rows="10" cols="45"
               placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               <label for="comment"></label>
@@ -138,34 +138,34 @@
           </div>
 
         </div>
-        <div class="form__button-wrap">
-          <button class="form__button" form="main-form" type="submit">Отправить форму</button>
-          <p class="form__postscript">* — обязательные поля</p>
+        <div class="button">
+          <button class="button__item" form="main-form" type="submit">Отправить форму</button>
         </div>
+        <p class="form__postscript"><span class="form__postscript-star">*</span> — обязательные поля</p>
       </form>
     </section>
   </main>
 
   <footer class="footer">
     <p class="footer__logo">
-      <img class="footer__logo-img" src="#" alt="Логотип приложения Пинк">
+      <img class="footer__logo-img" src="../img/logo-footer.svg" alt="Логотип приложения Пинк" width="145" height="40">
     </p>
     <ul class="footer__social-list">
       <li class="footer__social-item">
-        <a class="footer__social-link" href="https://twitter.com/?lang=ru">Twitter</a>
+        <a class="footer__social-link" href="https://twitter.com/?lang=ru"><span class="visually-hidden">Twitter</span></a>
       </li>
       <li class="footer__social-item">
-        <a class="footer__social-link" href="https://ru-ru.facebook.com/">Facebook</a>
+        <a class="footer__social-link" href="https://ru-ru.facebook.com/"><span class="visually-hidden">Facebook</span></a>
       </li>
       <li class="footer__social-item">
-        <a class="footer__social-link" href="https://www.youtube.com/">Youtube</a>
+        <a class="footer__social-link" href="https://www.youtube.com/"><span class="visually-hidden">Youtube</span></a>
       </li>
     </ul>
     <section class="footer__copyright">
       <div class="footer__copyright-wrap">
-        <p class="footer__copyright-text">HTML Academy</p>
-        <a href="#" class="footer__copyright-logo">
-          <img src="#" alt="Логотип HTML Academy">
+        <p class="footer__copyright-text">Разработано</p>
+        <a href="https://up.htmlacademy.ru/adaptive/23" class="footer__copyright-logo">
+          <img src="../img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
         </a>
       </div>
     </section>
