@@ -50,11 +50,47 @@
 @media (min-width: @tablet-width) {
   .billboard {
     background: url("../img/billboard-tablet.png") no-repeat;
+    height: 545px;
+    padding: 0 20px;
   }
 
   .billboard__wrapper {
     display: grid;
-    // grid-template-columns: 330px 330px;
-    // grid-template-rows: 179px 110px 40px 80px;
+    grid-template-columns: 321px 319px;
+    grid-template-rows: 160px 384px;
+    padding-top: 75px;
+  }
+
+  .billboard__title {
+    .font(@font-weight: 300; @font-size: 40px; @line-height: 48px);
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .billboard__img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .billboard__container {
+    display: grid;
+    grid-template-columns: 301px;
+    grid-template-rows: 89px 84px 179px;
+    grid-column: 1;
+    grid-row: 2;
+    padding: 32px 0 0 0;
+    background-color: transparent;
+  }
+
+  .billboard__button {
+    margin-bottom: 32px;
+  }
+
+  .billboard__text {
+    .font (@font-weight: 300; @line-height: 24px);
+    text-align: center;
   }
 }
