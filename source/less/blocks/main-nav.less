@@ -20,3 +20,20 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__link {
+    .font (@line-height: 18px);
+    text-transform: none;
+  }
+}
