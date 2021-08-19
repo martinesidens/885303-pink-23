@@ -18,7 +18,7 @@
   }
 
   .header__logo-img {
-    width: 145px;
+    width: 147px;
     height: 40px;
   }
 
@@ -28,8 +28,18 @@
 }
 
 @media (min-width: @desktop-width) {
+  .header {
+    background-color: var(--basic-grey);
+  }
+
   .header__wrapper {
     justify-content: flex-start;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .header__logo-img {
+    margin-right: 173px;
   }
 
   .header__toggle {
