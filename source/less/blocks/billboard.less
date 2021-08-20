@@ -100,16 +100,31 @@
 }
 
 @media (min-width: @desktop-width) {
+  .billboard {
+    min-height: 853px;
+  }
+
   .billboard__wrapper {
+    grid-template-columns: 300px 640px;
+    grid-template-rows: 240px 484px;
     padding-left: 130px;
     padding-right: 130px;
     padding-top: 92px;
     padding-bottom: 15px;
   }
 
+  .billboard__title {
+    .font (@font-weight: 300; @font-size: 50px; @line-height: 68px);
+    padding: 0;
+  }
+
+  .billboard__button {
+    .font (@font-weight: 700; @font-size: 21px; @line-height: 18px);
+  }
+
   .billboard__container {
     grid-template-rows: 89px 142px 173px;
-    padding-top: 81px;
+    padding-top: 0;
     padding-left: 0;
   }
 
