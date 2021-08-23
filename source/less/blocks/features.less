@@ -1,24 +1,120 @@
 .features__title {
   .font (@font-weight: 300; @font-size: 24px; @line-height: 29px);
   color: var(--basic-grey);
+  padding: 30px 20px;
+  margin-top: 0;
+  text-align: center;
+  min-height: 250px;
+  margin-bottom: 0;
+}
+
+.features__title-item {
+  display: block;
+  margin-bottom: 29px;
 }
 
 .features__list {
   .clear();
   background-color: var(--spec-white);
+  padding: 38px 20px 10px 20px;
+}
+
+.features__list-item {
+  margin-bottom: 30px;
 }
 
 .features__list-title {
   .font (@font-weight: 700; @line-height: 24px);
+  .clear();
   color: var(--basic-black);
+  margin-top: 0;
+  margin-bottom: 13px;
+  text-align: center;
 }
 
 .features__list-text {
   .font (@font-size: 14px; @line-height: 24px);
+  .clear();
   color: var(--basic-grey);
+  text-align: center;
 }
 
 .features__images {
   .clear();
   background-color: var(--spec-white);
+}
+
+.features__images-item {
+  text-align: center;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .features__title {
+    .font (@font-weight: 300; @font-size: 40px; @line-height: 54px);
+    padding-top: 46px;
+    min-height: 244px;
+  }
+
+  .features__title-item--size {
+    display: block;
+  }
+
+  .features__title-item {
+    margin-bottom: 0;
+  }
+
+  .features__wrapper {
+    display: grid;
+    grid-template-columns: 310px 350px;
+    grid-template-rows: 160px 160px 160px;
+  }
+
+  .features__list {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .features__list-item {
+    background-color: var(--spec-white);
+  }
+
+  .features__list-title {
+    text-align: left;
+  }
+
+  .features__list-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features {
+    padding: 0 130px;
+  }
+
+  .features__wrapper {
+    display: grid;
+    grid-template-columns: 313px 313px 313px;
+    grid-template-rows: 300px 230px;
+  }
+
+  .features__title {
+    .font (@font-weight: 300; @font-size: 50px; @line-height: 68px);
+  }
+
+  .features__images {
+    display: flex;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+  }
+
+  .features__images-item {
+    &--hidden {
+      display: block;
+    }
+  }
 }

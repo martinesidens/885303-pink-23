@@ -1,8 +1,8 @@
 .main-nav {
   position: absolute;
   width: 100%;
-  display: block;
-  top: 114px;
+  display: none;
+  top: 74px;
   left: 0;
 }
 
@@ -15,6 +15,7 @@
   .font(@font-weight: 700; @font-size: 18px; @line-height: 32px);
   padding: 11px 0;
   text-align: center;
+  height: 63px;
 }
 
 .main-nav__link {
@@ -23,11 +24,19 @@
   text-transform: uppercase;
 }
 
+@media (min-width: @tablet-width) {
+  .main-nav {
+    top: 116px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .main-nav {
     position: relative;
     display: flex;
     justify-content: space-between;
+    top: 0;
+    left: 0;
   }
 
   .main-nav__list {

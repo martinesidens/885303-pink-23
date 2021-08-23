@@ -12,7 +12,7 @@
 <header class="header">
   <div class="header__wrapper">
     <a class="header__logo">
-      <img class="header__logo-img" src="img/logo-tablet.svg" alt="Логотип приложения Пинк" width="74" height="23">
+      <img class="header__logo-img" src="img/logo-desktop.svg" alt="Логотип приложения Пинк" width="74" height="23">
     </a>
     <nav class="main-nav">
       <ul class="main-nav__list">
@@ -28,13 +28,12 @@
   </div>
 
 </header>
-<main>
   <h1 class="visually-hidden">Приложение для цветных фотографий Пинк</h1>
 
   <section class="billboard">
     <div class="billboard__wrapper">
       <p class="billboard__title">Взгляните на жизнь иначе!</p>
-      <img class="billboard__img" src="img/billboard-tablet-img.png" alt="Изображение телефона с приложение Пинк">
+      <img class="billboard__img" src="img/billboard-desktop-img.png" alt="Изображение телефона с приложение Пинк">
       <div class="billboard__container">
         <button class="billboard__button" type="button">Скачать&nbsp;приложение</button>
         <ul class="billboard__list">
@@ -49,36 +48,40 @@
 
   <section class="features">
     <h2 class="features__title">
-      <span>Устали от серости мегаполиса?</span>
-      <span>Нам есть, что вам предложить!</span>
+      <span class="features__title-item">Устали от серости мегаполиса?</span>
+      <span class="features__title-item--size">Нам есть, что вам <br>предложить!</span>
     </h2>
 
-    <ul class="features__list">
-      <li class="features__list-item">
-        <h3 class="features__list-title">Поднимает настроение</h3>
-        <p class="features__list-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-      </li>
-      <li class="features__list-item">
-        <h3 class="features__list-title">Меняет мир вокруг</h3>
-        <p class="features__list-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      </li>
-      <li class="features__list-item">
-        <h3 class="features__list-title">Заводит новых друзей</h3>
-        <p class="features__list-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-      </li>
-    </ul>
+    <div class="features__wrapper">
+      <ul class="features__list">
+        <li class="features__list-item">
+          <h3 class="features__list-title">Поднимает настроение</h3>
+          <p class="features__list-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="features__list-item">
+          <h3 class="features__list-title">Меняет мир вокруг</h3>
+          <p class="features__list-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="features__list-item">
+          <h3 class="features__list-title">Заводит новых друзей</h3>
+          <p class="features__list-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
 
-    <ul class="features__images">
-      <li class="features__images-item">
-        <img class="features__images-list visually-hidden" src="#" alt="Обычная фотография">
-      </li>
-      <li class="features__images-item">
-        <img class="features__images-list visually-hidden" src="#" alt="Фотография, обработанная приложением Пинк">
-      </li>
-      <li class="features__images-item">
-        <img class="features__images-list" src="img/iphone_smile.jpg" alt="Фотография, обработанная приложением Пинк со смайлом">
-      </li>
-    </ul>
+      <ul class="features__images">
+        <li class="features__images-item features__images-item--hidden">
+          <img class="features__images-list" src="img/features-desktop-img1.png" alt="Обычная фотография">
+        </li>
+        <li class="features__images-item features__images-item--hidden">
+          <img class="features__images-list" src="img/features-desktop-img2.png" alt="Фотография, обработанная приложением Пинк">
+        </li>
+        <li class="features__images-item">
+          <img class="features__images-list" src="img/features-desktop-img3.png" alt="Фотография, обработанная приложением Пинк со смайлом">
+        </li>
+      </ul>
+    </div>
+
+
   </section>
 
 <section class="reviews slider">
