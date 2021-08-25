@@ -2,6 +2,11 @@
   .clear();
 }
 
+.reviews__item {
+  background-color: var(--basic-white);
+  padding: 41px 20px 25px 20px;
+}
+
 .reviews__title {
   .font (@font-weight: 700);
   color: var(--basic-black);
@@ -20,4 +25,12 @@
   .font (@font-family: "Open Sans"; @font-size: 14px; @line-height: 30px);
   display: none;
   color: var(--basic-grey);
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__item {
+    padding: 41px 20px 25px 20px;
+  }
+
+
 }
