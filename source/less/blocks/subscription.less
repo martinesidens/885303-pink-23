@@ -39,16 +39,12 @@
   background-color: var(--basic-white);
   text-transform: uppercase;
   color: var(--basic-grey);
-
-  // &:first-child {
-  //   background-color: var(--basic-black);
-  // }
 }
 
 @media (min-width: @tablet-width) {
   .subscription {
     padding: 0 20px;
-    min-height: 250pxv;
+    min-height: 250px;
   }
 
   .subscription__cell {
@@ -60,8 +56,13 @@
 
 @media (min-width: @desktop-width) {
   .subscription {
-    padding: 0 130px;
+    padding: 20px 130px;
     min-height: 250px;
   }
-}
 
+  .subscription__cell {
+    text-transform: none;
+    width: 234px;
+    min-height: 59px;
+  }
+}

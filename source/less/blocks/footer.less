@@ -1,3 +1,10 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 20px;
+}
+
 .footer__social-list {
   list-style: none;
 }
@@ -5,4 +12,17 @@
 .footer__copyright-text {
   .font (@font-size: 14px; @line-height: 18px);
   color: var(--basic-grey);
+}
+
+.footer__copyright-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 130px;
+  }
 }
