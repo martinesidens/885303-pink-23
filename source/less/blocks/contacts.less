@@ -30,3 +30,26 @@
   margin: 0 0 19px 0;
   padding: 0 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    padding: 10px 20px;
+  }
+
+  .contacts__list {
+    display: grid;
+    grid-template-columns: 310px 310px;
+
+  }
+
+  .contacts__item {
+    &:last-child {
+      grid-column: ~"1/3";
+      grid-row: 2;
+    }
+  }
+
+  .contacts__map {
+    width: auto;
+  }
+}
