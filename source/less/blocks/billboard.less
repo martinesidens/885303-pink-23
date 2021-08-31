@@ -6,14 +6,13 @@
 }
 
 .billboard__wrapper {
-  padding: 13px 0 0 0;
+  padding-top: 13px;
 }
 
 .billboard__title {
   .font (@font-weight: 300; @font-size: 24px; @line-height: 29px);
   color: var(--basic-white);
   margin-top: 0;
-  padding: 0 20px;
   text-align: center;
   margin-bottom: 29px;
 }
@@ -24,7 +23,7 @@
 
 .billboard__container {
   background-color: var(--dark-grey);
-  padding: 28px 20px 0 20px;
+  padding-top: 28px;
 }
 
 .billboard__button {
@@ -59,9 +58,11 @@
   .billboard__wrapper {
     display: grid;
     grid-template-columns: 321px 319px;
-    grid-template-rows: 160px 384px;
+    grid-template-rows: 160px 384px 100px 100px 100px;
     padding-top: 75px;
   }
+
+
 
   .billboard__title {
     .font(@font-weight: 300; @font-size: 40px; @line-height: 48px);
@@ -78,9 +79,9 @@
   }
 
   .billboard__container {
-    display: grid;
-    grid-template-columns: 302px;
-    grid-template-rows: 89px 84px 179px;
+    // display: grid;
+    // grid-template-columns: 302px;
+    // grid-template-rows: 89px 84px 179px;
     grid-column: 1;
     grid-row: 2;
     padding-top: 32px;

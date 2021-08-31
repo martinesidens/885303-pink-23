@@ -22,16 +22,21 @@
 }
 
 .container {
-  min-width: @mobile-width;
+  max-width: 320px;
   padding: 0 20px;
+}
 
-  @media (min-width: @tablet-width) {
-    min-width: @tablet-width;
+@media (min-width: @tablet-width) {
+  .container {
+    max-width: 660px;
     padding: 0 20px;
   }
+}
 
-  @media (min-width: @desktop-width) {
-    min-width: @desktop-width;
-    padding: 0 130px;
+@media (min-width: @desktop-width) {
+  .container {
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
   }
 }
